@@ -21,16 +21,17 @@ const Hero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-5xl md:text-7xl font-display font-bold text-white mb-6 leading-tight"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight"
             >
-              Crack <span className="text-transparent bg-gradient-to-r from-blue-200 to-cyan-200 bg-clip-text">IELTS</span> with Confidence
+              Crack IELTS with{" "}
+              <span className="text-accent-foreground">Confidence</span>
             </motion.h1>
             
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0"
+              className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto lg:mx-0"
             >
               Expert mentors, AI-powered feedback, and real exam simulation to help you score 8+ bands.
             </motion.p>
@@ -42,7 +43,7 @@ const Hero = () => {
             >
               <Button
                 size="lg"
-                className="bg-white text-primary hover:bg-gray-50 text-lg px-8 py-4 h-auto font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 text-lg font-semibold shadow-primary transition-all duration-300 transform hover:scale-105"
               >
                 Get Started
               </Button>

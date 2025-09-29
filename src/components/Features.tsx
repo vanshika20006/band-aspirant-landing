@@ -55,7 +55,7 @@ const Features = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Why Choose <span className="text-primary">IELTS Mastery</span>?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -78,12 +78,12 @@ const Features = () => {
               whileHover={{ y: -10, scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
-              <Card className="h-full bg-gradient-card hover:bg-gradient-card-hover border border-border shadow-card hover:shadow-feature transition-all duration-300 hover:-translate-y-2 group">
+              <Card className="h-full bg-gradient-card hover:bg-gradient-card-hover border-0 shadow-card hover:shadow-feature transition-all duration-300 group">
                 <CardHeader className="text-center pb-4">
-                  <div className="flex items-center justify-center w-16 h-16 bg-primary/10 rounded-xl mb-6 group-hover:bg-primary/20 transition-colors">
-                    <feature.icon className="w-8 h-8 text-primary" />
+                  <div className={`mx-auto mb-4 w-16 h-16 rounded-full bg-gradient-to-r ${feature.gradient} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                    <feature.icon className="w-8 h-8 text-white" />
                   </div>
-                  <CardTitle className="text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
+                  <CardTitle className="text-xl font-bold text-card-foreground group-hover:text-primary transition-colors duration-300">
                     {feature.title}
                   </CardTitle>
                 </CardHeader>

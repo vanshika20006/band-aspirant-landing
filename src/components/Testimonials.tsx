@@ -49,7 +49,7 @@ const Testimonials = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             What Our <span className="text-primary">Students Say</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -72,10 +72,10 @@ const Testimonials = () => {
               whileHover={{ y: -5, scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
-              <Card className="h-full bg-gradient-card border border-border shadow-card hover:shadow-feature transition-all duration-300 hover:-translate-y-2 group">
-                <CardContent className="p-8">
+              <Card className="h-full bg-gradient-card border-0 shadow-card hover:shadow-feature transition-all duration-300 group">
+                <CardContent className="p-6">
                   {/* Stars */}
-                  <div className="flex justify-center mb-6">
+                  <div className="flex justify-center mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Star
                         key={i}
@@ -85,17 +85,17 @@ const Testimonials = () => {
                   </div>
 
                   {/* Review */}
-                  <blockquote className="text-muted-foreground text-center mb-6 leading-relaxed italic text-lg">
+                  <blockquote className="text-muted-foreground text-center mb-6 leading-relaxed italic">
                     "{testimonial.review}"
                   </blockquote>
 
                   {/* Profile */}
                   <div className="flex items-center justify-center space-x-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary-hover rounded-full flex items-center justify-center text-white font-bold text-lg">
+                    <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-lg">
                       {testimonial.image}
                     </div>
                     <div className="text-center">
-                      <p className="font-semibold text-card-foreground group-hover:text-primary transition-colors duration-300 text-lg">
+                      <p className="font-semibold text-card-foreground group-hover:text-primary transition-colors duration-300">
                         {testimonial.name}
                       </p>
                       <p className="text-sm text-success font-medium">

@@ -21,7 +21,7 @@ const Achievements = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-success-foreground mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-success-foreground mb-4">
             Our <span className="text-white">Achievements</span>
           </h2>
           <p className="text-lg text-success-foreground/90 max-w-2xl mx-auto">
@@ -44,7 +44,7 @@ const Achievements = () => {
               }}
               className="text-center"
             >
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/15 transition-all duration-300 hover:-translate-y-1 group">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/15 transition-all duration-300 group">
                 <Counter 
                   end={achievement.number} 
                   duration={achievement.duration}

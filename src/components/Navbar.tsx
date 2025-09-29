@@ -63,14 +63,14 @@ const Navbar = () => {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-lg border-b border-border/50 shadow-sm"
+      className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-md border-b border-border"
     >
       <div className="container mx-auto px-4 lg:px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="text-2xl font-display font-bold text-foreground hover:text-primary transition-colors"
+            className="text-2xl font-bold text-primary"
           >
             IELTS Mastery
           </motion.div>
